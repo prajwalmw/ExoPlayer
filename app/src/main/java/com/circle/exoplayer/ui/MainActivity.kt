@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         viewmodel = ViewModelProvider(this).get(FirstViewModel::class.java)
+
         binding.vm = viewmodel
         binding.lifecycleOwner = this
     }
